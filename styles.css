@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.topbar {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    width: 100%;
+    height: 45px;
+}
+
+.topbar i {
+    font-size: 1.5rem;
+    color: #99a3b0
+}
+
+.profile {
+    height: calc(100vh - 45px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo {
+    width: 95vw;
+    height: 80vh;
+    background: url(/tandem-x-visuals-3dvVkUaJ0u4-unsplash.jpg) center center/cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    color: #eee;
+    box-shadow: 0 2px 10px rgba(136, 136, 136, 0.77);
+}
+
+.details {
+    padding: 50px 15px 15px 10px;
+    background: linear-gradient(180deg, rgba(35, 34, 65, 0) 0%, rgba(0 ,0 ,0, 0.7));
+    width: 100%;
+    border-radius: 10px;
+}
+
+.details-name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.details-name h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.details-name h2:last-child{
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+.details-occupation {
+    line-height: 1.5rem;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.actions{
+    flex: auto;
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.action{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    font-size: 2rem;
+    border: 0.5px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.action-unlike{
+    color: #fd5068
+}
+
+.action-superlike{
+    color:#2db1ff;
+    margin: 0 3rem;
+}
+
+.action-like{
+    color: #1be4a1
+}
